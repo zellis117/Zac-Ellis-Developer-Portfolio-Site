@@ -1,0 +1,195 @@
+*{
+    font-family: monospace;
+}
+
+h2{
+    font-size: 30px;
+    text-align: center;
+    background-color: gray;
+}
+
+/* Header and Navigation */
+header{
+    background-color: black;
+    color: white;
+}
+
+header h1{
+    display: inline-block;
+    font-size: 48px;
+    padding: 20px;
+}
+
+nav{
+    float: right;
+    padding-top: 24px;
+    padding-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    font-size: 20px;
+    padding: 15px;
+}
+
+/* About Me */
+#about img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    width: 300px;
+    height: 300px;
+}
+
+#about p{
+    text-align: center;
+    font-size: 20px;
+}
+
+/* Grid boxes with content */
+h3{
+    font-size: 40px;
+}
+
+#boxes1 img, #boxes2 img{
+    display: block;
+    opacity: 0.5;
+    height: 250px;
+    width: 350px;
+}
+
+#boxes1, #boxes2{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Individual boxes */
+#boxes1 div, #boxes2 div{
+    background-color: gray;
+    border-style: solid;
+    border-radius: 15px;
+    border-color: black;
+    padding-left: 0px;
+    padding-top: 50px;
+    padding-right: 70px;
+    padding-bottom: 20px;
+    height: 250px;
+    width: 350px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+/* Box design formatting */
+#box_1, #box_2, #box_3,
+#box_4, #box_5, #box_6{
+    background-size: cover;
+    color: white;
+}
+
+#box_1 h3, #box_2 h3, #box_3 h3,
+#box_4 h3, #box_5 h3, #box_6 h3{
+    background-color: gray;
+}
+
+/* Unique background images for boxes */
+#box_1{background-image: url("./images/code_img.jpg");}
+#box_2{background-image: url("./images/keyboard_img.jpg");}
+#box_3{background-image: url("./images/meeting_img.jpg");}
+#box_4{background-image: url("./images/teamwork_img.jpg");}
+#box_5{background-image: url("./images/handshake_img.jpg");}
+#box_6{background-image: url("./images/resume_img.jpg");}
+
+#box_1:hover, #box_2:hover, #box_3:hover
+#box_4:hover, #box_5:hover, #box_6:hover{
+    cursor: pointer;
+}
+
+/* Portfolio Boxes */
+#TLG, #starBattle, #hikePlanner{
+    background-size: cover;
+    color: white;
+}
+
+#portfolio div{
+    background-color: gray;
+    border-style: solid;
+    border-radius: 15px;
+    border-color: black;
+    padding-left: 0px;
+    padding-top: 50px;
+    padding-right: 70px;
+    padding-bottom: 20px;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#hikePlanner{
+    background-color: gray;
+    border-style: solid;
+    border-radius: 15px;
+    border-color: black;
+    padding-left: 0px;
+    padding-top: 50px;
+    padding-right: 70px;
+    padding-bottom: 20px;
+    height: 200px;
+    width: 800px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#portfolio{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#hikePlanner h3, #TLG h3, #starBattle h3{
+    background-color: gray;
+}
+
+/* Cursor and links to applications */
+#hikePlanner:hover,
+#TLG:hover, 
+#starBattle{
+    cursor: pointer;
+}
+
+/* Background images for portfolio */
+#hikePlanner{background-image: url("./images/HikePlanner.jpg");}
+#TLG{background-image: url("./images/tlg_golf_games.jpg");}
+#starBattle{background-image: url("./images/star_battle.jpg");}
+
+/* Footer display */
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+/* Media quieries to adjust for different screen sizes */
+@media (max-width: 980px){
+    #boxes1, #boxes2, #portfolio{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    header{
+        padding-bottom: 100px;
+    }
+
+    nav ul li{
+        display: block;
+    }
+}
