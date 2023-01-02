@@ -101,13 +101,17 @@ h3{
 #box_5{background-image: url("./images/handshake_img.jpg");}
 #box_6{background-image: url("./images/resume_img.jpg");}
 
-#box_1:hover, #box_2:hover, #box_3:hover
+#box_1:hover, #box_2:hover, #box_3:hover,
 #box_4:hover, #box_5:hover, #box_6:hover{
     cursor: pointer;
 }
 
+/* Clickable display boxes */
+#display1 h4, #display2 h4{font-size: x-large;}
+#display1 p, #display2 p{font-size: x-large;}
+
 /* Portfolio Boxes */
-#TLG, #starBattle, #hikePlanner{
+#TLG, #starBattle, #hikePlanner, #flight{
     background-size: cover;
     color: white;
 }
@@ -152,13 +156,13 @@ h3{
     justify-content: space-evenly;
 }
 
-#hikePlanner h3, #TLG h3, #starBattle h3{
+#hikePlanner h3, #TLG h3, #starBattle h3, #flight h3{
     background-color: gray;
 }
 
 /* Cursor and links to applications */
 #hikePlanner:hover,
-#TLG:hover, 
+#TLG:hover, #flight,
 #starBattle{
     cursor: pointer;
 }
@@ -167,6 +171,7 @@ h3{
 #hikePlanner{background-image: url("./images/HikePlanner.jpg");}
 #TLG{background-image: url("./images/tlg_golf_games.jpg");}
 #starBattle{background-image: url("./images/star_battle.jpg");}
+#flight{background-image: url("./images/ball_flight.jpg");}
 
 /* Footer display */
 footer{
@@ -176,6 +181,7 @@ footer{
     background-color: black;
     color: white;
     padding: 20px;
+    font-size: 150%;
 }
 
 /* Media quieries to adjust for different screen sizes */
