@@ -111,12 +111,12 @@ h3{
 #display1 p, #display2 p{font-size: x-large;}
 
 /* Portfolio Boxes */
-#TLG, #starBattle, #hikePlanner, #flight{
+#TLG, #starBattle, #hikePlanner, #flight, #amerinotes{
     background-size: cover;
     color: white;
 }
 
-#portfolio div{
+#portfolio1 div, #portfolio2 div{
     background-color: gray;
     border-style: solid;
     border-radius: 15px;
@@ -132,7 +132,7 @@ h3{
     align-items: center;
 }
 
-#hikePlanner{
+/* #hikePlanner{
     background-color: gray;
     border-style: solid;
     border-radius: 15px;
@@ -142,28 +142,28 @@ h3{
     padding-right: 70px;
     padding-bottom: 20px;
     height: 200px;
-    width: 800px;
+    width: 600px;
     display: flex;
     justify-content: left;
     align-items: center;
     margin-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
-}
+} */
 
-#portfolio{
+#portfolio1, #portfolio2{
     display: flex;
     justify-content: space-evenly;
 }
 
-#hikePlanner h3, #TLG h3, #starBattle h3, #flight h3{
+#hikePlanner h3, #TLG h3, #starBattle h3, #flight h3, #amerinotes h3{
     background-color: gray;
 }
 
 /* Cursor and links to applications */
 #hikePlanner:hover,
 #TLG:hover, #flight,
-#starBattle{
+#starBattle, #amerinotes{
     cursor: pointer;
 }
 
@@ -172,6 +172,7 @@ h3{
 #TLG{background-image: url("./images/tlg_golf_games.jpg");}
 #starBattle{background-image: url("./images/star_battle.jpg");}
 #flight{background-image: url("./images/ball_flight.jpg");}
+#amerinotes{background-image: url("./images/AmeriNotes.png");}
 
 /* Footer display */
 footer{
