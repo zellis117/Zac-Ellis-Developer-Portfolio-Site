@@ -1,6 +1,8 @@
 var languages = document.querySelector('#box_1');
 var software = document.querySelector('#box_2');
 var clients = document.querySelector('#box_3');
+var management = document.querySelector('#box_4');
+var sales = document.querySelector('#box_5');
 var resume = document.querySelector('#box_6');
 var topRow = document.querySelector('#display1');
 var bottomRow = document.querySelector('#display2');
@@ -8,6 +10,8 @@ var bottomRow = document.querySelector('#display2');
 var softwareActive = false;
 var languagesActive = false;
 var clientsActive = false;
+var managementActive = false;
+var salesActive = false;
 var resumeActive = false;
 
 //Displays software experience when the matching div is clicked
@@ -70,6 +74,28 @@ var displayClients = function(){
     clientsActive = !clientsActive;
 }
 
+//Displays management experience on div click
+var displayManagement = function(){
+    if(managementActive == false){
+        var managementTitle = document.createElement('h4');
+        managementTitle.setAttribute('id','mt');
+        var managementBody = document.createElement('p');
+        managementBody.setAttribute('id','mb');
+        bottomRow.appendChild(managementTitle);
+        bottomRow.appendChild(managementBody);
+        managementTitle.textContent = 'Management Experience:';
+        managementBody.textContent = '7+ years between multiple facilities; Disney Management Training';
+    } else if(managementActive == true){
+        var delMT = document.getElementById('mt');
+        delMT.remove();
+        var delMB = document.getElementById('mb');
+        delMB.remove();
+    }
+    managementActive = !managementActive;
+}
+
+//Displays sales experience on div click
+
 //Displays Button to view Resume
 var displayResume = function(){
     if(resumeActive == false){
@@ -95,4 +121,5 @@ var displayResume = function(){
 languages.addEventListener('click',displayLanguages);
 software.addEventListener('click',displaySoftware);
 clients.addEventListener('click',displayClients);
+management.addEventListener('click',displayManagement);
 resume.addEventListener('click',displayResume);
