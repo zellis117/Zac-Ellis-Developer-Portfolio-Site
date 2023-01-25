@@ -111,7 +111,7 @@ h3{
 #display1 p, #display2 p{font-size: x-large;}
 
 /* Portfolio Boxes */
-#TLG, #starBattle, #hikePlanner, #flight, #amerinotes{
+#TLG, #starBattle, #hikePlanner, #flight, #amerinotes, #movieApp{
     background-size: cover;
     color: white;
 }
@@ -161,7 +161,7 @@ h3{
 }
 
 /* Cursor and links to applications */
-#hikePlanner:hover,
+#hikePlanner:hover, #movieApp,
 #TLG:hover, #flight,
 #starBattle, #amerinotes{
     cursor: pointer;
@@ -173,6 +173,7 @@ h3{
 #starBattle{background-image: url("./images/star_battle.jpg");}
 #flight{background-image: url("./images/ball_flight.jpg");}
 #amerinotes{background-image: url("./images/AmeriNotes.png");}
+#movieApp{background-image: url("./images/movieApp.png");}
 
 /* Footer display */
 footer{
